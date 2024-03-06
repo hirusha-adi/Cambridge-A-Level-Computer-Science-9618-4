@@ -87,11 +87,13 @@ def TotalData():
         NumberRecords += 1
 
 
+# d)
 def OutputRecords():
     for X in range(0, NumberRecords):
         print("ID", Records[X].GetID(), " Total ", Records[X].GetTotal())
 
 
+# e) i
 Records = []
 HeadPointer = 0
 TailPointer = 0

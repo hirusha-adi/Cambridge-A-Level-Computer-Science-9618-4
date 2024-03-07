@@ -1,12 +1,31 @@
+---
+title: "9618_s22_qp_42 (2022 May 42)"
+sidebar_label: "9618_s22_qp_42"
+---
+
+<details>
+<summary>Resources:</summary>
+
+- [Question Paper](./9618_s22_qp_42.pdf)
+- [Exam Resources](./9618_s22_sf_42.zip)
+- [My Answers `(evidence.doc)`](./9618_s22_sf_42/06_9618_42_Confidential%20Source%20Files%20June%202022/evidence.doc)
+
+</details>
+
+## Question 1
+
+```python
 StackData = []
 StackPointer = 0
 MAX_SIZE = 10
+
 
 def OutputStack() -> None:
     global StackData, StackPointer
     print(StackPointer)
     for data in StackData:
         print(data)
+
 
 def Push(value: int) -> bool:
     global StackData, StackPointer
@@ -19,6 +38,7 @@ def Push(value: int) -> bool:
         StackPointer += 1
         StackData.append(value)
         return True
+
 
 for i in range(11):
     while True:
@@ -50,6 +70,16 @@ def Pop() -> int:
         StackPointer -= 1
         return StackData.pop()
 
+
 Pop()
 Pop()
 OutputStack()
+```
+
+## Question 2
+
+- still incomplete
+
+## Question 3
+
+- still incomplete

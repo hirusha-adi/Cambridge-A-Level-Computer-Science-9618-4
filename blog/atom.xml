@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://your-docusaurus-site.example.com/blog</id>
+    <title>CIE A/L 9618 P4 Past Paper attemps Blog</title>
+    <updated>2024-03-07T00:00:00.000Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://your-docusaurus-site.example.com/blog"/>
+    <subtitle>CIE A/L 9618 P4 Past Paper attemps Blog</subtitle>
+    <icon>https://your-docusaurus-site.example.com/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Question Analysis of Past Papers]]></title>
+        <id>https://your-docusaurus-site.example.com/blog/2024-03-07-question-analysis</id>
+        <link href="https://your-docusaurus-site.example.com/blog/2024-03-07-question-analysis"/>
+        <updated>2024-03-07T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[To be completed on the 5-7 days before the exam.]]></summary>
+        <content type="html"><![CDATA[<p>To be completed on the 5-7 days before the exam.</p>]]></content>
+        <author>
+            <name>Hirusha Adikari</name>
+            <uri>https://hirusha.xyz</uri>
+        </author>
+        <category label="analysis" term="analysis"/>
+    </entry>
+</feed>

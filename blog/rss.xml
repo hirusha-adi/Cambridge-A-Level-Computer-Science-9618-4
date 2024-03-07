@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>CIE A/L 9618 P4 Past Paper attemps Blog</title>
+        <link>https://your-docusaurus-site.example.com/blog</link>
+        <description>CIE A/L 9618 P4 Past Paper attemps Blog</description>
+        <lastBuildDate>Thu, 07 Mar 2024 00:00:00 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <language>en</language>
+        <item>
+            <title><![CDATA[Question Analysis of Past Papers]]></title>
+            <link>https://your-docusaurus-site.example.com/blog/2024-03-07-question-analysis</link>
+            <guid>https://your-docusaurus-site.example.com/blog/2024-03-07-question-analysis</guid>
+            <pubDate>Thu, 07 Mar 2024 00:00:00 GMT</pubDate>
+            <description><![CDATA[To be completed on the 5-7 days before the exam.]]></description>
+            <content:encoded><![CDATA[<p>To be completed on the 5-7 days before the exam.</p>]]></content:encoded>
+            <category>analysis</category>
+        </item>
+    </channel>
+</rss>

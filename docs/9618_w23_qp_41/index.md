@@ -7,7 +7,7 @@ sidebar_label: "9618_w23_qp_41"
 <summary>Resources:</summary>
 
 - [Question Paper](./9618_w23_qp_41.pdf)
-- [Exam Resources](./9618_w23_qp_41.zip)
+- [Exam Resources](./9618_w23_sf_41.zip)
 - [My Answers `(evidence.doc)`](./9618_w23_sf_41/11_9618_41_SourceFiles/evidence.doc)
 
 </details>

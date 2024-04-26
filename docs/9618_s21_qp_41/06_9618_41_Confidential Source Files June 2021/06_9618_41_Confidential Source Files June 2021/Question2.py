@@ -10,14 +10,13 @@ def linearSearch(search_for: int) -> bool:
     return False
 
 # b) ii)
-value = input("[?] Input an integer: ")
 while True:
     try:
+        value = input("[?] Input an integer: ")
         if "." in value:    # if decimal number
             raise ValueError
-        else:
-            value = int(value)
-            break
+        value = int(value)
+        break
     except ValueError:
         print("[!!] Please enter a valid integer!")
         

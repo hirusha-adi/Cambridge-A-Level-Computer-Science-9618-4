@@ -429,9 +429,18 @@ def dequeue():
 
 Oof. Nothing here. Go try something from method 2, or watch [this video](https://www.youtube.com/watch?v=tLHdz4VTmAs).
 
+Just remember this code block:
+
+```python
+while cur.next != None:
+    cur = cur.next
+    # do stuff here
+    # ...
+```
+
 ### Method 2
 
-Use this incase if things go wrong. Simple.
+Use this incase if things go wrong. Simple. Based on [this video](https://www.youtube.com/watch?v=JlMyYuY1aXU)
 
 ```python
 class Node:
@@ -468,6 +477,36 @@ class LinkedList:
             cur = cur.next
             elems.append(cur.data)
         print(elems)
+    
+    def get(self, index):
+        # from 1, doesnt start from 0
+        if index >= self.length():
+            print("Index out of range!")
+            return None
+        
+        cur_id = 0
+        cur_node = self.head
+
+        while True:
+            cur_node = cur_node.next # go through every node
+            if cur_id == index:
+                return cur_node.data # break and return when index = cur_node idx
+            cur_id += 1
+    
+    def erase(self, index):
+        if index >= self.length():
+            print("Index out of range!")
+            return None
+        
+        cur_id = 0
+        cur_node = self.head
+        while True:
+            last_node = cur_node
+            cur_node = cur_node.next
+            if cur_id == index: # when current node's index = given index
+                last_node.next = cur_node.next
+                return
+            cur_id += 1
 
 
 ll = LinkedList()

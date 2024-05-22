@@ -422,6 +422,153 @@ def dequeue():
         print("removed element at fron of queue (element pointed by headP)")
 ```
 
-### Linked Lists
 
+## Linked List
+
+### Method 1
+
+Oof. Nothing here. Go try something from method 2, or watch [this video](https://www.youtube.com/watch?v=tLHdz4VTmAs).
+
+### Method 2
+
+Use this incase if things go wrong. Simple.
+
+```python
+class Node:
+    def __init__(self, data=None):
+        self.data = data
+        self.next = None
+
+class LinkedList:
+    def __init__(self):
+        self.head = Node()
+    
+    def append(self, data):
+        new_node = Node(data=data)
+        cur = self.head # start from beginning
+
+        while cur.next != None: # next element of current is not None
+            # means, this is not the final node
+            cur = cur.next # so, go to next node
+        
+        cur.next = new_node
+    
+    def length(self):
+        cur = self.head
+        total = 0
+        while cur.next != None:
+            total += 1
+            cur = cur.next
+        return total
+
+    def display_linkedList(self):
+        elems = []
+        cur = self.head
+        while cur.next != None:
+            cur = cur.next
+            elems.append(cur.data)
+        print(elems)
+
+
+ll = LinkedList()
+ll.display_linkedList() # []
+
+ll.append(3)        
+ll.append(5)        
+ll.append(2)        
+ll.append(9)        
+        
+ll.display_linkedList() # [3, 5, 2, 9]
+```
+
+
+### Method 3
+
+Use this incase if things go wrong. Too complex.
+
+```python
+class Node:
+    def __init__(self, data):
+        self.data = data
+        self.next = None
+
+class LinkedList:
+    def __init__(self):
+        self.head = None # empty LL with None head
+
+    def is_empty(self):
+        return self.head is None # is empty?
+    
+    def add_at_head(self, data):
+        new_node = Node(data)
+        new_node.next = self.head
+        self.head = new_node
+    
+    def add_at_tail(self, data):
+        new_node = Node(data) # new tmp node
+
+        if self.is_empty(): # if empty, new node to head
+            self.head = new_node
+        else:
+            current = self.head
+            while current.next is not None: # traverse to end
+                current = current.next
+            current.next = new_node # append new node
+
+    def add_at_middle(self, data, position):
+        new_node = Node(data) # new node
+
+        if self.is_empty(): # if empty, set at head
+            self.head = new_node
+        elif position == 0: # if insert at start,
+                            # insert at beginning
+            new_node.next = self.head
+            self.head = new_node
+        else:
+            # traverse to given position
+            current = self.head
+            count = 1
+
+            while count < position and current.next is not None:
+                current = current.next
+                count += 1
+
+            # add new node
+            new_node.next = current.next
+            current.next = new_node
+        
+    def search(self, data):
+        current = self.head
+
+        # until end
+        while current is not None:
+            if current.data == data:
+                return True
+            current = current.next # go to next node
+
+        return False
+    
+    def remove(self, data):
+        if self.is_empty(): # rem first occurence
+            return
+
+        if self.head.data == data:
+            # If the head contains the data, update the head
+            self.head = self.head.next
+            return
+
+        current = self.head
+        while current.next is not None: # traverse until found
+            if current.next.data == data: # find data
+                current.next = current.next.next
+                return # remove
+            current = current.next
+        
+    def display(self):
+        current = self.head
+        while current is not None: # condition
+            print(current.data, end=" -> ") 
+            current = current.next  # go to next node
+        print("None") # final node
+```
 

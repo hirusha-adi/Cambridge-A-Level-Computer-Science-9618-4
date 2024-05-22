@@ -350,15 +350,20 @@ class Queue:
 
 ## Circular Queue
 
-### Method 1
-
+- no two methods, so remeber this.
 - same stuff as linear queue, but wraps around.
+
+![alt text](image.png)
+
+- waste of memmory here. we can move the tail pointer to wrap around the empty spaces, not waste memmory. that is where the circular queues become handy. 
+- note that when dequeuing, we should also to wrap around the head pointer
+
 
 #### Declaration
 
-```
+```python
 size = 8
-num = 0
+num = 0 # basically for a len() like thing
 headP = 0
 tailP = -1
 queue = ['' for _ in range(size)]
@@ -368,11 +373,55 @@ queue = ['' for _ in range(size)]
 
 - check if full? if not,
     - increment tail pointer
+    - **if tailP > size-1: set tailP to 0**
     - store in new incremented tail pointer
+    - increment number of elements
+
+```python
+def enqueue(newData):
+    global queue, num size, headP, tailP
+    if num >= size:
+        print("Queue is full")
+    else:
+        tailP += 1 # increment tailP
+
+        # adjust the queue to become circular
+        # -----
+        if tailP > size-1:
+            tailP = 0
+        # -----
+
+        queue[tailP] = newData # store in new tail index
+        num += 1 # new element added, for len() like thing
+        print("Added item to queue")
+```
+
 
 #### Dequeue
 
-![alt text](image.png)
+- optionally, remove current value at head-pointer (or replace)
+- increment head-pointer
+- decrement number of elements
 
-waste of storage here. we can move the tail pointer to wrap around the empty spaces, not waste memmory. that is where the circular queues become handy. note that when dequeuing, we should also to wrap around the head pointer
+```python
+def dequeue():
+    global queue, num size, headP, tailP
+    if num <= 0:
+        print("empty queue. no elements.")
+    else:
+        removed = queue[headP]
+        headP += 1
+        num -= 1
+
+        # adjust the queue to become circular
+        # -----
+        if headP > size-1:
+            headP = 0
+        # -----
+
+        print("removed element at fron of queue (element pointed by headP)")
+```
+
+### Linked Lists
+
 

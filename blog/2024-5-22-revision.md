@@ -301,6 +301,7 @@ def dequeue():
         headP += 1
         num -= 1
         print("removed element at fron of queue (element pointed by headP)")
+        return removed
 ```
 
 

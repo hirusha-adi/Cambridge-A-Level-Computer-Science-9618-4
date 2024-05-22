@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkwebsite=self.webpackChunkwebsite||[]).push([[346],{4242:e=>{e.exports=JSON.parse('{"permalink":"/Cambridge-A-Level-Computer-Science-9618-4/blog/tags/revision","page":1,"postsPerPage":10,"totalPages":1,"totalCount":2,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);

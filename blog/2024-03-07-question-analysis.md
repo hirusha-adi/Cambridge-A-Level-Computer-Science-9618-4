@@ -72,9 +72,7 @@ Specimen Paper 4:
 
 - Below are three guesses at "2022 June 42":
 
-### Guess 1:
-
-Based on the analysis of previous years' exam patterns, here are some educated guesses for the topics that might appear in the "2024 June 42" paper:
+### Guess 1
 
 1. **Data Structure: Stack**
    - **Push and Pop Operations:** The stack operations (push and pop) have appeared frequently in the past exams, and particularly in Paper 42 of previous years like 2022 June 42 and 2023 Nov 42. Hence, it is likely to appear again.
@@ -93,7 +91,7 @@ Given these trends, the three likely topics for the "2024 June 42" paper are:
 
 These topics align with the observed patterns from previous exams and cover a broad range of fundamental concepts likely to be tested.
 
-### Guess 2:
+### Guess 2
 
 1. **Queue**
    - **Enqueue and Dequeue Operations:** Queue operations, particularly enqueue and dequeue, have appeared in previous papers like 2022 June 43 and 2023 Nov 41. This makes it a strong candidate for appearing again, possibly in a circular queue context or a standard linear queue.
@@ -104,7 +102,8 @@ These topics align with the observed patterns from previous exams and cover a br
 3. **Object-Oriented Programming (OOP)**
    - **With File Handling:** Consistently included in nearly all papers, OOP concepts coupled with file handling are likely to appear again. This could involve class design, inheritance, polymorphism, or working with files within an OOP framework.
 
-### Guess 3:
+### Guess 3
+
 1. **Binary Tree (with Arrays)**
    - **Node Operations and Traversals:** Binary tree operations such as adding nodes, searching, and traversing (in-order, post-order) have been tested in several papers, including 2021 Nov 41 and 2022 Nov 43. This makes it a likely topic, with a focus on implementing these operations using arrays.
 
